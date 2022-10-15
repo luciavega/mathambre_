@@ -555,7 +555,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 583440188}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.71, y: -2.58, z: 0}
+  m_LocalPosition: {x: -0.29, y: -2.58, z: 0}
   m_LocalScale: {x: 0.45, y: 0.37, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -677,7 +677,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &583440195
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -807,6 +807,7 @@ Transform:
   m_LocalScale: {x: 1.01041, y: 9.8493395, z: 1}
   m_Children:
   - {fileID: 1417434604}
+  - {fileID: 1991541778}
   m_Father: {fileID: 1271559786}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1525,11 +1526,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1905456351}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d115105f09a29a0408a1eabc38371dcc, type: 3}
+  m_Script: {fileID: 11500000, guid: 0232b621d735ed8478c28d21716a7eb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MatTransform: {fileID: 583440192}
-  deviation: {x: 0, y: 0, z: 0}
+  target: {fileID: 583440192}
 --- !u!1 &1936780406
 GameObject:
   m_ObjectHideFlags: 0
@@ -1695,9 +1695,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1991541775}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 40.435, y: 2.89, z: 0}
-  m_LocalScale: {x: 0.15612105, y: 1.2777212, z: 1}
+  m_LocalPosition: {x: 42.16537, y: -0.047296897, z: 0}
+  m_LocalScale: {x: 0.1332005, y: 1.0071939, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 862057954}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/scenes/lockers_pasillo.unity
     guid: 62c5abd2d6074004cb121ab029b81c5a
-  - enabled: 1
-    path: Assets/scenes/inicio.unity
-    guid: c211f65c07fbfd740a8de1ab14a7b4c5
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
