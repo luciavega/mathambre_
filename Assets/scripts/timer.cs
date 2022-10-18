@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class timer : MonoBehaviour
 {
@@ -21,6 +22,9 @@ public class timer : MonoBehaviour
 
     void Start()
     {
+
+        DontDestroyOnLoad(this.gameObject);
+
         // establecer la escala de tiempo inicial
         escalaDeTiempoInicial = escaladeTiempo;
 
@@ -31,6 +35,8 @@ public class timer : MonoBehaviour
         tiempoAMostrarEnSegundos = tiempoInicial;
 
         ActualizarReloj(tiempoInicial);
+
+      
     }
     void Update()
     {
@@ -40,6 +46,8 @@ public class timer : MonoBehaviour
         //la siguiente variable va acumulando el tiempo transcurrido para luego mostrarlo en el reloj
         tiempoAMostrarEnSegundos -= tiempoDelFrameConTimeScale;
         ActualizarReloj(tiempoAMostrarEnSegundos);
+
+       
     }
 
     public void ActualizarReloj(float tiempoEnSegundos)
@@ -60,5 +68,7 @@ public class timer : MonoBehaviour
 
         //actualizar el elemetno del text de UI con la cadena de caracteres
         myText.text = textoDelReloj;
+
+        
     }
 }

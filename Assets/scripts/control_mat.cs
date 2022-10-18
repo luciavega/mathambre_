@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class control_mat : MonoBehaviour
 {
+
+    
     Animator _anim;
 
     private bool Hactivo;
@@ -15,8 +17,10 @@ public class control_mat : MonoBehaviour
     void Start()
     {
         _anim = GetComponent<Animator>();
-
+       
     }
+
+   
 
     // Update is called once per frame
     void Update()
