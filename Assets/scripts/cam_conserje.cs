@@ -11,7 +11,7 @@ public class cam_conserje : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(Mathf.Clamp(target.position.x, -3.12f, 0f), Mathf.Clamp(target.position.y, 0.4f, 0f), transform.position.z);
+        transform.position = new Vector3(Mathf.Clamp(target.position.x, 0f, 0f), Mathf.Clamp(target.position.y, 0.4f, 0f), transform.position.z);
 
     }
 }

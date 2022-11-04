@@ -9,7 +9,7 @@ public class pasillo : MonoBehaviour
    {
     if(collision.gameObject.tag == "Player")
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
 
     }
    }

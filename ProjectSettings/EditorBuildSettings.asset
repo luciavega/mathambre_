@@ -9,11 +9,14 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/scenes/00_pasillo.unity
-    guid: 62c5abd2d6074004cb121ab029b81c5a
+    path: Assets/scenes/pre-inicio.unity
+    guid: 9f478f5b6b83e764cb0f56d1364eaa2d
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/scenes/00_pasillo.unity
+    guid: 62c5abd2d6074004cb121ab029b81c5a
   - enabled: 1
     path: Assets/scenes/02_matadero.unity
     guid: 375f9a5550694b04c91f81d4adff1923
@@ -30,9 +33,18 @@ EditorBuildSettings:
     path: Assets/scenes/05_deposito.unity
     guid: 1d38bfd19e37a4e479cda9dd2b35d9e3
   - enabled: 1
-    path: Assets/scenes/final_b.unity
+    path: Assets/scenes/goodend.unity
     guid: d5f324c3b3dc1fe45b24d8a33289496f
   - enabled: 1
-    path: Assets/scenes/final_m.unity
+    path: Assets/scenes/badend_01.unity
     guid: cf019f1fe03fb3a40a30ee6d749abc36
+  - enabled: 1
+    path: Assets/scenes/01_locker.unity
+    guid: 0d9dcc256d81d1f4bad84aeb8c609722
+  - enabled: 1
+    path: Assets/scenes/inicio.unity
+    guid: 7363d1134f65c3d469e68b2ef19e532a
+  - enabled: 1
+    path: Assets/scenes/cinematografica.unity
+    guid: 4ff38b88feb42b547a53e44816f2307d
   m_configObjects: {}

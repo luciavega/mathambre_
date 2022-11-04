@@ -1,24 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class pic_click : MonoBehaviour
 
 {
+    public static pic_click inst;
 
-    
-    // Start is called before the first frame update
-    void Update()
+    void Awake()
     {
 
-    }
+        Scene scene = SceneManager.GetActiveScene();
 
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (Input.GetMouseButtonDown(0))
+        if (pic_click.inst == null)
         {
-            Destroy(collision.gameObject);
-           
+            //primera vez
+            pic_click.inst = this;
+            DontDestroyOnLoad(gameObject);
+
         }
+
+        else
+        {
+            //ya hay una instancia? eliminarla
+            Destroy(gameObject);
+        }
+
     }
+    
+
 }

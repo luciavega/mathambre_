@@ -12,16 +12,16 @@ public class tiempo : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(transform.gameObject);
-        timeTF.GetComponent<Text>().text = "120";
+        timeTF.GetComponent<Text>().text = "10";
         InvokeRepeating("ReduceTime", 1, 1);
-    }
-    void ReduceTime()
-    {
-        if (timeTF.GetComponent<Text>().text == "1")
+
+        if (timeTF.GetComponent<Text>().text == "0")
         {
             SceneManager.LoadScene("7");
         }
-
+    }
+    void ReduceTime()
+    {
         timeTF.GetComponent<Text>().text = (int.Parse(timeTF.GetComponent<Text>().text) - 1).ToString();
     }
 }

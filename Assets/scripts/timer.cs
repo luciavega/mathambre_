@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class timer : MonoBehaviour
 {
+  
+
+
     [Tooltip("Tiempo inicial en segundos")]
     public int tiempoInicial;
 
@@ -19,11 +22,13 @@ public class timer : MonoBehaviour
     private float escalaDeTiempoAlPausar, escalaDeTiempoInicial;
     private bool isPaused = false;
 
+    // public static timer inst;
 
-    void Start()
+
+    void Awake()
     {
 
-        DontDestroyOnLoad(this.gameObject);
+        GUIElement.DontDestroyOnLoad(gameObject);
 
         // establecer la escala de tiempo inicial
         escalaDeTiempoInicial = escaladeTiempo;
@@ -36,9 +41,11 @@ public class timer : MonoBehaviour
 
         ActualizarReloj(tiempoInicial);
 
-      
+
     }
-    void Update()
+
+   
+        void Update()
     {
         //variable que representa el tiempo de cada frame considerando la escala de tiempo
         tiempoDelFrameConTimeScale = Time.deltaTime * escaladeTiempo;
@@ -47,8 +54,10 @@ public class timer : MonoBehaviour
         tiempoAMostrarEnSegundos -= tiempoDelFrameConTimeScale;
         ActualizarReloj(tiempoAMostrarEnSegundos);
 
-       
+        
+
     }
+
 
     public void ActualizarReloj(float tiempoEnSegundos)
     {
@@ -69,6 +78,11 @@ public class timer : MonoBehaviour
         //actualizar el elemetno del text de UI con la cadena de caracteres
         myText.text = textoDelReloj;
 
-        
+
+        if (tiempoEnSegundos <= 0)
+        {
+            SceneManager.LoadScene(8);
+        }
+
     }
 }

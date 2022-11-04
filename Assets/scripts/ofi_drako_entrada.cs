@@ -7,12 +7,13 @@ public class ofi_drako_entrada : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
-        {
-            SceneManager.LoadScene(2);
-        }
 
+        if (collision.gameObject.tag == "Player" )
+        {
+            SceneManager.LoadScene(3);
+        }
     }
 
-}
+ 
 
+}

@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class control_mat : MonoBehaviour
 {
-
-    
+  
     Animator _anim;
 
     private bool Hactivo;
@@ -16,15 +15,15 @@ public class control_mat : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         _anim = GetComponent<Animator>();
-       
+      
     }
-
-   
 
     // Update is called once per frame
     void Update()
     {
+        
         Movements();
         {
             float move = Input.GetAxis("Horizontal");
@@ -34,6 +33,7 @@ public class control_mat : MonoBehaviour
             _anim.SetBool("walking", walking);
 
         }
+
 
         if (Input.GetButtonDown("Horizontal"))
         {
@@ -83,6 +83,6 @@ public class control_mat : MonoBehaviour
             transform.eulerAngles = new Vector2(0, -180);
         }
 
-        
     }
+
 }

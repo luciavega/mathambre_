@@ -11,7 +11,7 @@ public class limite_camara : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(Mathf.Clamp(target.position.x, -32f, 32f), Mathf.Clamp(target.position.y, 0, 0), transform.position.z);
+        transform.position = new Vector3(Mathf.Clamp(target.position.x, -41f, 42f), Mathf.Clamp(target.position.y, 0, 0), transform.position.z);
 
     }
 }
